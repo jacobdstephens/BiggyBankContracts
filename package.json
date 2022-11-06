@@ -4,10 +4,10 @@
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
     "debug": "DEBUG=true npm run compile --force && npx hardhat test",
-    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network mainnet",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network polygon",
     "deploy:testnet": "npx hardhat run scripts/deploy.js --network mumbai",
-    "verify:mainnet": "npx hardhat verify --constructor-args scripts/deploy-verification-arguments.js --network mainnet <address>",
-    "verify:testnet": "npx hardhat verify --constructor-args scripts/deploy-verification-arguments.js --network testnet 0xdFE2C86e37A076da0D23F043A1F2Fc36DD45f1FF"
+    "verify:mainnet": "npx hardhat verify --constructor-args scripts/deploy-verification-arguments.js --network polygon <address>",
+    "verify:testnet": "npx hardhat verify --constructor-args scripts/deploy-verification-arguments.js --network mumbai 0x28EEA4b7F9632892940b08c91bCa1D589e41427C"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
