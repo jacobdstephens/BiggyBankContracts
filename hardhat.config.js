@@ -37,6 +37,10 @@ module.exports = {
   networks: {
     hardhat: {
     },
+    mumbai: {
+      url: 'https://rpc.ankr.com/polygon_mumbai',
+      accounts: getHDWallet(),
+    },
     // goerli: {
     //   url: 'https://rpc.ankr.com/eth_goerli',
     //   accounts: getHDWallet(),
@@ -52,6 +56,8 @@ module.exports = {
     apiKey: {
       mainnet: process.env.ETHERSCAN_API_KEY,
       goerli: process.env.ETHERSCAN_API_KEY,
+      polygon: process.env.POLYSCAN_API_KEY,
+      polygonMumbai: process.env.POLYSCAN_API_KEY,
     }
   },
   solidity: {

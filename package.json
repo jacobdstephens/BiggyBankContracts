@@ -3,7 +3,11 @@
   "scripts": {
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
-    "debug": "DEBUG=true npm run compile --force && npx hardhat test"
+    "debug": "DEBUG=true npm run compile --force && npx hardhat test",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network mainnet",
+    "deploy:testnet": "npx hardhat run scripts/deploy.js --network mumbai",
+    "verify:mainnet": "npx hardhat verify --constructor-args scripts/deploy-verification-arguments.js --network mainnet <address>",
+    "verify:testnet": "npx hardhat verify --constructor-args scripts/deploy-verification-arguments.js --network testnet 0xdFE2C86e37A076da0D23F043A1F2Fc36DD45f1FF"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
@@ -20,6 +24,7 @@
     "chai-as-promised": "^7.1.1",
     "dotenv": "^16.0.0",
     "hardhat-gas-reporter": "^1.0.7",
+    "solhint": "^3.3.7",
     "web3": "^1.7.0"
   }
 }

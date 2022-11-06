@@ -103,8 +103,8 @@ contract BiggieBank is ERC721, Ownable {
         '{',
             '"name": "BiggieBank #', Strings.toString(_tokenId), '",',
             '"description": "On chain piggy banks",',
-            '"image": "', base, 'piggy.png",',
-            '"animation_url": "', base, 'piggy.glb",',
+            '"image": "', base, 'biggiepiggy.png",',
+            '"animation_url": "', base, 'biggiepiggy.glb",',
         '}'
     );
 

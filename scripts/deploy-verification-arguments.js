@@ -1,3 +1,1 @@
-const { parseUnits } = require("ethers/lib/utils");
-
-module.exports = ['https://example.com/{hash}/', '0x1B930f5F02DBf357A750E951Eb6D8b9d768FB14B'];
+module.exports = ['https://nftstorage.link/ipfs/bafybeigwyc2xvazidi5opqg6qnd3k6ufkxlt7xvrc3mob7n43tklalwymq/', '0x337100A1Db22Ea1c58c49Ba00Ab3df32548Fd6C8'];
